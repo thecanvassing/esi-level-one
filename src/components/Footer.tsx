@@ -1,3 +1,5 @@
+import esiLogo from "@/assets/esi-logo.png";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -8,9 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-hero flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">E</span>
-              </div>
+              <img src={esiLogo} alt="ESI L1 Logo" className="w-10 h-10 rounded-lg" />
               <span className="font-bold text-xl">ESI L1</span>
             </div>
             <p className="text-background/70 leading-relaxed max-w-md">

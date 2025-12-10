@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import esiLogo from "@/assets/esi-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,9 +32,7 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl bg-gradient-hero flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">E</span>
-          </div>
+          <img src={esiLogo} alt="ESI L1 Logo" className="w-10 h-10 rounded-lg" />
           <span className="font-bold text-xl text-foreground">ESI L1</span>
         </a>
 
