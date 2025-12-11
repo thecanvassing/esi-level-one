@@ -1,4 +1,7 @@
 import { Check, DollarSign, Shield, Wrench, Users, Globe } from "lucide-react";
+import gooddollarLogo from "@/assets/gooddollar-logo.png";
+import minipayLogo from "@/assets/minipay-logo.png";
+import canvassingLogo from "@/assets/canvassing-logo.png";
 
 const features = [
   {
@@ -36,7 +39,7 @@ const WhyDifferentSection = () => {
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
               No Investment Required.{" "}
-              <span className="text-primary-glow">No Risk.</span>{" "}
+              <span className="text-accent">No Risk.</span>{" "}
               Just Learning.
             </h2>
             <p className="text-secondary-foreground/80 text-lg leading-relaxed mb-8">
@@ -48,8 +51,8 @@ const WhyDifferentSection = () => {
             <div className="space-y-4">
               {features.slice(0, 3).map((feature, index) => (
                 <div key={index} className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center shrink-0">
-                    <feature.icon className="text-primary-glow" size={20} />
+                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center shrink-0">
+                    <feature.icon className="text-white" size={20} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-secondary-foreground">{feature.title}</h3>
@@ -58,15 +61,25 @@ const WhyDifferentSection = () => {
                 </div>
               ))}
             </div>
+
+            {/* Powered by section */}
+            <div className="mt-8 pt-6 border-t border-white/20">
+              <p className="text-sm text-secondary-foreground/60 mb-3">Powered by</p>
+              <div className="flex items-center gap-4">
+                <img src={gooddollarLogo} alt="GoodDollar" className="w-10 h-10 rounded-full" />
+                <img src={minipayLogo} alt="MiniPay" className="w-10 h-10 rounded-xl" />
+                <img src={canvassingLogo} alt="Canvassing" className="w-10 h-10 rounded-xl" />
+              </div>
+            </div>
           </div>
 
-          <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/10">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
             <h3 className="text-xl font-bold mb-6 text-secondary-foreground">Why ESI L1?</h3>
             <div className="space-y-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center shrink-0">
-                    <Check className="text-primary-foreground" size={14} />
+                  <div className="w-6 h-6 rounded-full bg-accent flex items-center justify-center shrink-0">
+                    <Check className="text-accent-foreground" size={14} />
                   </div>
                   <span className="text-secondary-foreground">{feature.title}</span>
                 </div>

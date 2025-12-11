@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Sparkles, Coins } from "lucide-react";
+import { ArrowRight, Shield, Coins } from "lucide-react";
+import gooddollarLogo from "@/assets/gooddollar-logo.png";
+import minipayLogo from "@/assets/minipay-logo.png";
+import canvassingLogo from "@/assets/canvassing-logo.png";
 
 const HeroSection = () => {
   return (
@@ -14,7 +17,7 @@ const HeroSection = () => {
           {/* Content */}
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6 animate-fade-up">
-              <Sparkles size={16} />
+              <span>✨</span>
               <span>100% Free Crypto Education</span>
             </div>
 
@@ -50,6 +53,16 @@ const HeroSection = () => {
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Coins size={18} className="text-primary" />
                 <span className="text-sm font-medium">Earn Real Tokens</span>
+              </div>
+            </div>
+
+            {/* Partner Logos */}
+            <div className="mt-8 pt-6 border-t border-border animate-fade-up" style={{ animationDelay: "0.5s" }}>
+              <p className="text-sm text-muted-foreground mb-3">Powered by</p>
+              <div className="flex items-center gap-4 justify-center lg:justify-start">
+                <img src={gooddollarLogo} alt="GoodDollar" className="w-10 h-10 rounded-full" />
+                <img src={minipayLogo} alt="MiniPay" className="w-10 h-10 rounded-xl" />
+                <img src={canvassingLogo} alt="Canvassing" className="w-10 h-10 rounded-xl" />
               </div>
             </div>
           </div>
