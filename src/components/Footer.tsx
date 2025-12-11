@@ -51,17 +51,17 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-background/70 hover:text-background transition-colors">
+                <a href="/privacy-policy" className="text-background/70 hover:text-background transition-colors">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-background/70 hover:text-background transition-colors">
+                <a href="/terms-of-service" className="text-background/70 hover:text-background transition-colors">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="mailto:support@canvassing.org" className="text-background/70 hover:text-background transition-colors">
+                <a href="mailto:admin@thecanvassing.xyz" className="text-background/70 hover:text-background transition-colors">
                   Contact
                 </a>
               </li>

@@ -40,8 +40,8 @@ const CTASection = () => {
 
           <p className="mt-6 text-sm opacity-70">
             Have questions? Reach out to us at{" "}
-            <a href="mailto:support@canvassing.org" className="underline hover:opacity-100">
-              support@canvassing.org
+            <a href="mailto:admin@thecanvassing.xyz" className="underline hover:opacity-100">
+              admin@thecanvassing.xyz
             </a>
           </p>
         </div>
