@@ -1,4 +1,7 @@
-import { Users, Target, Globe } from "lucide-react";
+import { Users } from "lucide-react";
+import gooddollarLogo from "@/assets/gooddollar-logo.png";
+import minipayLogo from "@/assets/minipay-logo.png";
+import canvassingLogo from "@/assets/canvassing-logo.png";
 
 const AboutSection = () => {
   return (
@@ -28,14 +31,17 @@ const AboutSection = () => {
               digital economy.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              <div className="flex items-center gap-2 px-4 py-2 bg-muted rounded-full">
-                <Globe className="text-primary" size={18} />
-                <span className="text-sm font-medium text-foreground">GoodDollar Partner</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-muted rounded-full">
-                <Target className="text-primary" size={18} />
-                <span className="text-sm font-medium text-foreground">MiniPay Partner</span>
+            <div className="mb-6">
+              <p className="text-sm text-muted-foreground mb-3">Powered by</p>
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-3 px-4 py-2 bg-muted rounded-full">
+                  <img src={gooddollarLogo} alt="GoodDollar" className="w-6 h-6 rounded-full" />
+                  <span className="text-sm font-medium text-foreground">GoodDollar</span>
+                </div>
+                <div className="flex items-center gap-3 px-4 py-2 bg-muted rounded-full">
+                  <img src={minipayLogo} alt="MiniPay" className="w-6 h-6 rounded-lg" />
+                  <span className="text-sm font-medium text-foreground">MiniPay</span>
+                </div>
               </div>
             </div>
           </div>
@@ -49,9 +55,7 @@ const AboutSection = () => {
                 benefit most from blockchain technology."
               </blockquote>
               <div className="flex items-center gap-4 pt-6 border-t border-primary-foreground/20">
-                <div className="w-12 h-12 rounded-full bg-primary-foreground/20 flex items-center justify-center font-bold text-lg">
-                  C
-                </div>
+                <img src={canvassingLogo} alt="Canvassing" className="w-12 h-12 rounded-xl" />
                 <div>
                   <p className="font-semibold">Canvassing</p>
                   <p className="text-sm opacity-80">Established 2024</p>
