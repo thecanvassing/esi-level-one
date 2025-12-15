@@ -32,7 +32,7 @@ const AboutSection = () => {
             </p>
 
             <div className="mb-6">
-              <p className="text-sm text-muted-foreground mb-3">Powered by</p>
+              <p className="text-sm text-muted-foreground mb-3">Inspired by</p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-3 px-4 py-2 bg-muted rounded-full">
                   <img src={gooddollarLogo} alt="GoodDollar" className="w-6 h-6 rounded-full" />
