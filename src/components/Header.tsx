@@ -31,7 +31,7 @@ const Header = () => {
       }`}
     >
       <div className="container flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <img src={esiLogo} alt="ESI L1 Logo" className="w-10 h-10 rounded-lg" />
           <span className="font-bold text-xl text-foreground">ESI L1</span>
         </a>
