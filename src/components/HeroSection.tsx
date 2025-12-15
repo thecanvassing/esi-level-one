@@ -58,7 +58,7 @@ const HeroSection = () => {
 
             {/* Partner Logos */}
             <div className="mt-8 pt-6 border-t border-border animate-fade-up" style={{ animationDelay: "0.5s" }}>
-              <p className="text-sm text-muted-foreground mb-3">Powered by</p>
+              <p className="text-sm text-muted-foreground mb-3">Inspired by</p>
               <div className="flex items-center gap-4 justify-center lg:justify-start">
                 <img src={gooddollarLogo} alt="GoodDollar" className="w-10 h-10 rounded-full" />
                 <img src={minipayLogo} alt="MiniPay" className="w-10 h-10 rounded-xl" />

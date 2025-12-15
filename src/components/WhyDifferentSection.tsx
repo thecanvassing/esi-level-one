@@ -62,9 +62,9 @@ const WhyDifferentSection = () => {
               ))}
             </div>
 
-            {/* Powered by section */}
+            {/* Inspired by section */}
             <div className="mt-8 pt-6 border-t border-white/20">
-              <p className="text-sm text-secondary-foreground/60 mb-3">Powered by</p>
+              <p className="text-sm text-secondary-foreground/60 mb-3">Inspired by</p>
               <div className="flex items-center gap-4">
                 <img src={gooddollarLogo} alt="GoodDollar" className="w-10 h-10 rounded-full" />
                 <img src={minipayLogo} alt="MiniPay" className="w-10 h-10 rounded-xl" />

@@ -74,7 +74,7 @@ const Footer = () => {
             © {currentYear} Canvassing. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-sm text-background/50">
-            <span>Powered by</span>
+            <span>Inspired by</span>
             <span className="font-semibold text-background/70">GoodDollar</span>
             <span>•</span>
             <span className="font-semibold text-background/70">MiniPay</span>
