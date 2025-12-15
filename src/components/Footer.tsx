@@ -69,16 +69,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-background/10 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-background/50 text-sm">
+        <div className="pt-8 border-t border-background/10">
+          <p className="text-background/50 text-sm text-center sm:text-left">
             © {currentYear} Canvassing. All rights reserved.
           </p>
-          <div className="flex items-center gap-4 text-sm text-background/50">
-            <span>Inspired by</span>
-            <span className="font-semibold text-background/70">GoodDollar</span>
-            <span>•</span>
-            <span className="font-semibold text-background/70">MiniPay</span>
-          </div>
         </div>
       </div>
     </footer>
