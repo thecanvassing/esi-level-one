@@ -33,55 +33,62 @@ const features = [
 
 const WhyDifferentSection = () => {
   return (
-    <section className="py-20 bg-secondary text-secondary-foreground">
-      <div className="container">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="py-24 bg-foreground text-background relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary blob blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary blob blur-3xl" />
+      </div>
+
+      <div className="container relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            <p className="text-sm font-bold uppercase tracking-widest text-primary mb-4">Why Choose Us</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
               No Investment Required.{" "}
-              <span className="text-accent">No Risk.</span>{" "}
-              Just Learning.
+              <span className="text-primary">No Risk.</span>{" "}
+              <span className="text-secondary">Just Learning.</span>
             </h2>
-            <p className="text-secondary-foreground/80 text-lg leading-relaxed mb-8">
+            <p className="text-background/70 text-lg leading-relaxed mb-10">
               Most crypto education asks you to invest money to "learn by doing." 
               ESI L1 flips that model. We give you real tokens to learn with, 
               so you gain experience without any financial risk.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-5">
               {features.slice(0, 3).map((feature, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center shrink-0">
-                    <feature.icon className="text-white" size={20} />
+                <div key={index} className="flex items-start gap-4 group">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary/30 transition-colors">
+                    <feature.icon className="text-primary" size={22} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-secondary-foreground">{feature.title}</h3>
-                    <p className="text-secondary-foreground/70 text-sm">{feature.description}</p>
+                    <h3 className="font-bold text-background text-lg">{feature.title}</h3>
+                    <p className="text-background/60">{feature.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Inspired by section */}
-            <div className="mt-8 pt-6 border-t border-white/20">
-              <p className="text-sm text-secondary-foreground/60 mb-3">Inspired by</p>
-              <div className="flex items-center gap-4">
-                <img src={gooddollarLogo} alt="GoodDollar" className="w-10 h-10 rounded-full" />
-                <img src={minipayLogo} alt="MiniPay" className="w-10 h-10 rounded-xl" />
-                <img src={canvassingLogo} alt="Canvassing" className="w-10 h-10 rounded-xl" />
+            <div className="mt-10 pt-8 border-t border-background/10">
+              <p className="text-sm text-background/50 mb-4 font-medium uppercase tracking-wider">Inspired by</p>
+              <div className="flex items-center gap-5">
+                <img src={gooddollarLogo} alt="GoodDollar" className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-transform" />
+                <img src={minipayLogo} alt="MiniPay" className="w-12 h-12 rounded-xl shadow-lg hover:scale-110 transition-transform" />
+                <img src={canvassingLogo} alt="Canvassing" className="w-12 h-12 rounded-xl shadow-lg hover:scale-110 transition-transform" />
               </div>
             </div>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <h3 className="text-xl font-bold mb-6 text-secondary-foreground">Why ESI L1?</h3>
-            <div className="space-y-4">
+          <div className="bg-background/5 backdrop-blur-sm rounded-3xl p-10 border border-background/10">
+            <h3 className="text-2xl font-bold mb-8 text-background">Why ESI L1?</h3>
+            <div className="space-y-5">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-accent flex items-center justify-center shrink-0">
-                    <Check className="text-accent-foreground" size={14} />
+                <div key={index} className="flex items-center gap-4 group">
+                  <div className="w-8 h-8 rounded-full bg-gradient-hero flex items-center justify-center shrink-0 shadow-lg">
+                    <Check className="text-primary-foreground" size={16} />
                   </div>
-                  <span className="text-secondary-foreground">{feature.title}</span>
+                  <span className="text-background font-medium group-hover:text-primary transition-colors">{feature.title}</span>
                 </div>
               ))}
             </div>
