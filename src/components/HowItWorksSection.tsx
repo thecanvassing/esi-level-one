@@ -26,15 +26,30 @@ const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="py-20 bg-background">
       <div className="container">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Three Simple Steps to{" "}
             <span className="text-gradient-hero">Get Started</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Getting started with ESI L1 is easy. Follow these simple steps 
-            and begin your crypto education journey today.
+            Getting started with ESI L1 is easy. Watch the video below or follow these simple steps 
+            to begin your crypto education journey today.
           </p>
+        </div>
+
+        {/* Video Embed */}
+        <div className="max-w-3xl mx-auto mb-16">
+          <div className="relative rounded-2xl overflow-hidden shadow-elegant border border-border/50 bg-card">
+            <div className="aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/P7WRjBXI9N4"
+                title="ESI L1 Earn Crypto Risk Free"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
