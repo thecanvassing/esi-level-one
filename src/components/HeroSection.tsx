@@ -75,26 +75,24 @@ const HeroSection = () => {
           <div className="relative animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Phone Mockup with enhanced styling */}
-              <div className="relative bg-gradient-hero rounded-[2.5rem] p-1 shadow-glow">
-                <div className="bg-gradient-hero rounded-[2.5rem] p-3">
-                  <div className="bg-card rounded-[2rem] p-8 min-h-[420px] flex flex-col items-center justify-center shadow-inner">
-                    <div className="w-20 h-20 rounded-2xl bg-gradient-hero flex items-center justify-center mb-6 animate-float shadow-cta">
-                      <Coins size={40} className="text-primary-foreground" />
+              <div className="relative bg-gradient-hero rounded-[2.5rem] p-[3px] shadow-glow">
+                <div className="bg-card rounded-[2.4rem] p-8 min-h-[420px] flex flex-col items-center justify-center">
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-hero flex items-center justify-center mb-6 animate-float shadow-cta">
+                    <Coins size={40} className="text-primary-foreground" />
+                  </div>
+                  <p className="text-2xl font-bold text-foreground mb-2">Daily UBI Claimed!</p>
+                  <p className="text-5xl font-extrabold text-gradient-hero mb-3 font-mono">+50 G$</p>
+                  <p className="text-muted-foreground text-sm">Keep learning to earn more</p>
+                  
+                  {/* Stats Cards */}
+                  <div className="grid grid-cols-2 gap-4 mt-10 w-full">
+                    <div className="bg-gradient-subtle rounded-2xl p-5 text-center border border-border/50">
+                      <p className="text-3xl font-bold text-foreground font-mono">5</p>
+                      <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide mt-1">Modules</p>
                     </div>
-                    <p className="text-2xl font-bold text-foreground mb-2">Daily UBI Claimed!</p>
-                    <p className="text-5xl font-extrabold text-gradient-hero mb-3 font-mono">+50 G$</p>
-                    <p className="text-muted-foreground text-sm">Keep learning to earn more</p>
-                    
-                    {/* Stats Cards */}
-                    <div className="grid grid-cols-2 gap-4 mt-10 w-full">
-                      <div className="bg-gradient-subtle rounded-2xl p-5 text-center border border-border/50">
-                        <p className="text-3xl font-bold text-foreground font-mono">5</p>
-                        <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide mt-1">Modules</p>
-                      </div>
-                      <div className="bg-gradient-subtle rounded-2xl p-5 text-center border border-border/50">
-                        <p className="text-3xl font-bold text-primary font-mono">Free</p>
-                        <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide mt-1">Forever</p>
-                      </div>
+                    <div className="bg-gradient-subtle rounded-2xl p-5 text-center border border-border/50">
+                      <p className="text-3xl font-bold text-primary font-mono">Free</p>
+                      <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide mt-1">Forever</p>
                     </div>
                   </div>
                 </div>
