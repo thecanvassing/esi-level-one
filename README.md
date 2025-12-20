@@ -180,7 +180,7 @@ The landing page is fully responsive across all device sizes:
 ### Partner Platforms
 
 - **[GoodDollar](https://gooddollar.org)** – Universal Basic Income cryptocurrency
-- **[MiniPay](https://minipay.com)** – Mobile-first crypto wallet by Opera
+- **[MiniPay](https://minipay.to)** – Mobile-first crypto wallet by Opera
 
 ### Social Media
 
