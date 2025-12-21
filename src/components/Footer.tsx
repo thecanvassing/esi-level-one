@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Linkedin } from "lucide-react";
+import { Instagram, Twitter, Linkedin, MessageCircle } from "lucide-react";
 import esiLogo from "@/assets/esi-logo.png";
 
 const TikTokIcon = () => (
@@ -15,6 +15,7 @@ const Footer = () => {
     { icon: TikTokIcon, href: "https://tiktok.com/@thecanvassing", label: "TikTok" },
     { icon: Twitter, href: "https://x.com/thecanvassing", label: "X (Twitter)" },
     { icon: Linkedin, href: "https://www.linkedin.com/company/thecanvassing", label: "LinkedIn" },
+    { icon: MessageCircle, href: "https://chat.whatsapp.com/ErzJIN3kvxu1CnAp2qK6F0", label: "WhatsApp" },
   ];
 
   return (
