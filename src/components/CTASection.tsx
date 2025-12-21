@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Star } from "lucide-react";
+import { ArrowRight, Sparkles, Star, MessageCircle } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -53,6 +53,16 @@ const CTASection = () => {
               <a href="https://systeme.io" target="_blank" rel="noopener noreferrer">
                 Start Learning for Free
                 <ArrowRight size={20} />
+              </a>
+            </Button>
+            <Button 
+              variant="hero" 
+              size="xl" 
+              asChild
+            >
+              <a href="https://chat.whatsapp.com/ErzJIN3kvxu1CnAp2qK6F0" target="_blank" rel="noopener noreferrer">
+                <MessageCircle size={20} />
+                Join WhatsApp Group
               </a>
             </Button>
           </div>
