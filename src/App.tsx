@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
-
+import FloatingWhatsAppButton from "./components/FloatingWhatsAppButton";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -18,6 +18,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <FloatingWhatsAppButton />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
