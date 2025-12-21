@@ -56,7 +56,7 @@ const CTASection = () => {
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-xl hover:shadow-2xl" 
               asChild
             >
-              <a href="https://tally.so/r/RGx79K?utm_source=lovable" target="_blank" rel="noopener noreferrer">
+              <a href="https://tally.so/r/RGx79K?utm_source=website" target="_blank" rel="noopener noreferrer">
                 Start Learning for Free
                 <ArrowRight size={20} />
               </a>
