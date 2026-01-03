@@ -29,7 +29,7 @@ const modules = [
     number: 4,
     icon: Smartphone,
     title: "Testing Apps on MiniPay",
-    description: "Unlock developer mode and learn how to test decentralized applications. Earn 3,000 G$ just for engaging with The Good Pax App.",
+    description: "Unlock developer mode and learn how to test decentralized applications. Explore The Good Pax App and experience real dApps firsthand.",
     gradient: "bg-gradient-purple",
     iconBg: "bg-accent/15 text-accent",
   },
