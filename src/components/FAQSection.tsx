@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Do I need to invest any money?",
-    answer: "No. You never need to spend your own money. The entire program is designed around free tokens provided by GoodDollar and Canvassing's reward systems.",
+    answer: "No. You never need to spend your own money. The entire program is designed around free tokens provided by GoodDollar's Universal Basic Income system.",
   },
   {
     question: "What is GoodDollar?",
