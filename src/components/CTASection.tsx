@@ -56,7 +56,18 @@ const CTASection = () => {
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-xl hover:shadow-2xl" 
               asChild
             >
-              <a href="https://tally.so/r/RGx79K?utm_source=website" target="_blank" rel="noopener noreferrer">
+              <a 
+                href="https://tally.so/r/RGx79K?utm_source=website" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).ttq) {
+                    (window as any).ttq.track('ClickButton', {
+                      contents: [{ content_name: 'Start Learning for Free - CTA' }]
+                    });
+                  }
+                }}
+              >
                 Start Learning for Free
                 <ArrowRight size={20} />
               </a>
