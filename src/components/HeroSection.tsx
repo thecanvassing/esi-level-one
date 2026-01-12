@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Coins, Sparkles } from "lucide-react";
+import { ArrowRight, ShieldCheck, CircleDollarSign, Zap } from "lucide-react";
 import gooddollarLogo from "@/assets/gooddollar-logo.png";
 import minipayLogo from "@/assets/minipay-logo.png";
 import canvassingLogo from "@/assets/canvassing-logo.png";
@@ -21,7 +21,7 @@ const HeroSection = () => {
           {/* Content */}
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary/10 border border-primary/20 text-primary font-semibold text-sm mb-8 animate-fade-up">
-              <Sparkles size={16} className="animate-pulse-soft" />
+              <Zap size={16} strokeWidth={2.5} className="animate-pulse-soft" />
               <span>100% Free Crypto Education</span>
             </div>
 
@@ -51,11 +51,11 @@ const HeroSection = () => {
             {/* Trust Badges */}
             <div className="flex flex-wrap gap-6 mt-12 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: "0.4s" }}>
               <div className="flex items-center gap-2.5 px-4 py-2 rounded-full bg-card border border-border shadow-sm">
-                <Shield size={18} className="text-primary" />
+                <ShieldCheck size={18} strokeWidth={2} className="text-primary" />
                 <span className="text-sm font-semibold text-foreground">No Investment Required</span>
               </div>
               <div className="flex items-center gap-2.5 px-4 py-2 rounded-full bg-card border border-border shadow-sm">
-                <Coins size={18} className="text-secondary" />
+                <CircleDollarSign size={18} strokeWidth={2} className="text-secondary" />
                 <span className="text-sm font-semibold text-foreground">Earn Real Tokens</span>
               </div>
             </div>
@@ -78,7 +78,7 @@ const HeroSection = () => {
               <div className="relative bg-gradient-hero rounded-[2.5rem] p-[3px] shadow-glow">
                 <div className="bg-card rounded-[2.4rem] p-8 min-h-[420px] flex flex-col items-center justify-center">
                   <div className="w-20 h-20 rounded-2xl bg-gradient-hero flex items-center justify-center mb-6 animate-float shadow-cta">
-                    <Coins size={40} className="text-primary-foreground" />
+                    <CircleDollarSign size={40} strokeWidth={1.5} className="text-primary-foreground" />
                   </div>
                   <p className="text-2xl font-bold text-foreground mb-2">Daily UBI Claimed!</p>
                   <p className="text-5xl font-extrabold text-gradient-hero mb-3 font-mono">+50 G$</p>

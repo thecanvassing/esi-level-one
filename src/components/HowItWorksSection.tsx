@@ -1,22 +1,22 @@
 import { Button } from "@/components/ui/button";
-import { UserPlus, BookOpen, Coins, ArrowRight } from "lucide-react";
+import { UserRoundPlus, BookMarked, Gem, ArrowRight } from "lucide-react";
 
 const steps = [
   {
     number: 1,
-    icon: UserPlus,
+    icon: UserRoundPlus,
     title: "Register for Free",
     description: "Sign up using the registration form. You'll receive access to all five modules through our learning platform.",
   },
   {
     number: 2,
-    icon: BookOpen,
+    icon: BookMarked,
     title: "Follow the Modules",
     description: "Work through each module at your own pace. Each lesson includes clear instructions, screenshots, and practical exercises.",
   },
   {
     number: 3,
-    icon: Coins,
+    icon: Gem,
     title: "Earn While You Learn",
     description: "As you progress, you'll claim UBI, unlock achievements, and earn tokens. By the end, you'll have real crypto in your wallet.",
   },
@@ -58,14 +58,14 @@ const HowItWorksSection = () => {
               {/* Connector Arrow */}
               {index < steps.length - 1 && (
                 <div className="hidden md:block absolute top-12 -right-4 z-10">
-                  <ArrowRight className="text-border" size={32} />
+                  <ArrowRight className="text-border" size={32} strokeWidth={1.5} />
                 </div>
               )}
 
               <div className="text-center">
-                <div className="relative inline-flex items-center justify-center w-24 h-24 rounded-full bg-gradient-hero mb-6 mx-auto">
-                  <step.icon className="text-primary-foreground" size={36} />
-                  <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-sm">
+                <div className="relative inline-flex items-center justify-center w-24 h-24 rounded-full bg-gradient-hero mb-6 mx-auto shadow-lg">
+                  <step.icon className="text-primary-foreground" size={34} strokeWidth={1.5} />
+                  <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-sm shadow-md">
                     {step.number}
                   </div>
                 </div>

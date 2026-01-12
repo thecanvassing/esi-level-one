@@ -1,4 +1,4 @@
-import { TrendingDown, AlertTriangle, Target, CheckCircle } from "lucide-react";
+import { TrendingDown, OctagonAlert, Crosshair, CircleCheckBig } from "lucide-react";
 
 const ProblemSection = () => {
   return (
@@ -8,7 +8,7 @@ const ProblemSection = () => {
           {/* Problem Side */}
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-destructive/10 text-destructive font-medium text-sm">
-              <AlertTriangle size={14} />
+              <OctagonAlert size={14} strokeWidth={2.5} />
               <span>The Problem</span>
             </div>
             
@@ -23,7 +23,7 @@ const ProblemSection = () => {
             </p>
 
             <div className="flex items-start gap-4 p-4 bg-destructive/5 rounded-xl border border-destructive/10">
-              <TrendingDown className="text-destructive mt-1 shrink-0" size={24} />
+              <TrendingDown className="text-destructive mt-1 shrink-0" size={24} strokeWidth={2} />
               <div>
                 <p className="font-semibold text-foreground">Most beginners lose money</p>
                 <p className="text-sm text-muted-foreground">Because they invest before they understand</p>
@@ -34,7 +34,7 @@ const ProblemSection = () => {
           {/* Solution Side */}
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium text-sm">
-              <Target size={14} />
+              <Crosshair size={14} strokeWidth={2.5} />
               <span>Our Solution</span>
             </div>
             
@@ -55,7 +55,7 @@ const ProblemSection = () => {
                 "Skills you can use immediately",
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <CheckCircle className="text-primary shrink-0" size={20} />
+                  <CircleCheckBig className="text-primary shrink-0" size={20} strokeWidth={2} />
                   <span className="font-medium text-foreground">{item}</span>
                 </div>
               ))}

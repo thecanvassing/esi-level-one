@@ -1,35 +1,41 @@
-import { CalendarCheck, ArrowRightLeft, Phone, TestTube, ClipboardList, Wallet } from "lucide-react";
+import { CalendarClock, Repeat2, Signal, FlaskConical, ListTodo, PiggyBank } from "lucide-react";
 
 const outcomes = [
   {
-    icon: CalendarCheck,
+    icon: CalendarClock,
     title: "Claim Daily UBI",
     description: "Receive free tokens from GoodDollar every single day, just for being human.",
+    accent: "from-primary/15 to-primary/5",
   },
   {
-    icon: ArrowRightLeft,
+    icon: Repeat2,
     title: "Swap Tokens",
     description: "Convert G$ to stablecoins like cUSD and USDT with real-world value.",
+    accent: "from-secondary/20 to-secondary/5",
   },
   {
-    icon: Phone,
+    icon: Signal,
     title: "Buy Airtime",
     description: "Make real purchases using your crypto directly through MiniPay.",
+    accent: "from-accent/15 to-accent/5",
   },
   {
-    icon: TestTube,
+    icon: FlaskConical,
     title: "Test dApps",
     description: "Earn rewards as an early tester of decentralized applications.",
+    accent: "from-primary/15 to-primary/5",
   },
   {
-    icon: ClipboardList,
+    icon: ListTodo,
     title: "Complete Tasks",
     description: "Turn small micro tasks into token earnings on the Pax platform.",
+    accent: "from-secondary/20 to-secondary/5",
   },
   {
-    icon: Wallet,
+    icon: PiggyBank,
     title: "Manage Crypto",
     description: "Confidently store, send, and receive cryptocurrency.",
+    accent: "from-accent/15 to-accent/5",
   },
 ];
 
@@ -54,8 +60,8 @@ const OutcomesSection = () => {
               key={index}
               className="group bg-card rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 border border-border/50 hover:border-primary/30"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                <outcome.icon className="text-primary" size={24} />
+              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${outcome.accent} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-border/30`}>
+                <outcome.icon className="text-primary" size={22} strokeWidth={1.75} />
               </div>
               <h3 className="text-lg font-bold text-foreground mb-2">
                 {outcome.title}
