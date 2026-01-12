@@ -1,29 +1,32 @@
-import { BookOpen, Wallet, Coins, Smartphone, Trophy } from "lucide-react";
+import { GraduationCap, Wallet2, HandCoins, Smartphone, Award } from "lucide-react";
 
 const modules = [
   {
     number: 1,
-    icon: BookOpen,
+    icon: GraduationCap,
     title: "Introduction to ESI L1",
     description: "Understand the mission behind Education for Social Impact and how this program aligns with the UN Sustainable Development Goals.",
     gradient: "bg-gradient-hero",
-    iconBg: "bg-primary/15 text-primary",
+    iconBg: "from-primary/20 to-primary/5",
+    iconColor: "text-primary",
   },
   {
     number: 2,
-    icon: Wallet,
+    icon: Wallet2,
     title: "Getting Started with MiniPay",
     description: "Set up your first crypto wallet using MiniPay—the simplest, most user-friendly wallet in Africa. Learn what stablecoins are.",
     gradient: "bg-gradient-warm",
-    iconBg: "bg-secondary/20 text-secondary-foreground",
+    iconBg: "from-secondary/25 to-secondary/10",
+    iconColor: "text-secondary-foreground",
   },
   {
     number: 3,
-    icon: Coins,
+    icon: HandCoins,
     title: "Understanding GoodDollar & UBI",
     description: "Discover GoodDollar, the world's largest crypto UBI project. Complete identity verification and start claiming free G$ tokens daily.",
     gradient: "bg-gradient-hero",
-    iconBg: "bg-primary/15 text-primary",
+    iconBg: "from-primary/20 to-primary/5",
+    iconColor: "text-primary",
   },
   {
     number: 4,
@@ -31,15 +34,17 @@ const modules = [
     title: "Testing Apps on MiniPay",
     description: "Unlock developer mode and learn how to test decentralized applications. Explore The Good Pax App and experience real dApps firsthand.",
     gradient: "bg-gradient-purple",
-    iconBg: "bg-accent/15 text-accent",
+    iconBg: "from-accent/20 to-accent/5",
+    iconColor: "text-accent",
   },
   {
     number: 5,
-    icon: Trophy,
+    icon: Award,
     title: "Earning with Pax by Canvassing",
     description: "Complete micro tasks for token rewards. Learn to withdraw earnings, swap G$ for stablecoins, and make real purchases.",
     gradient: "bg-gradient-warm",
-    iconBg: "bg-secondary/20 text-secondary-foreground",
+    iconBg: "from-secondary/25 to-secondary/10",
+    iconColor: "text-secondary-foreground",
   },
 ];
 
@@ -80,8 +85,8 @@ const ModulesSection = () => {
                     {/* Hover gradient overlay */}
                     <div className={`absolute inset-0 ${module.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
                     
-                    <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl ${module.iconBg} mb-5 transition-transform group-hover:scale-110 duration-300`}>
-                      <module.icon size={28} />
+                    <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${module.iconBg} mb-5 transition-transform group-hover:scale-110 duration-300 shadow-sm border border-border/30`}>
+                      <module.icon size={26} strokeWidth={1.75} className={module.iconColor} />
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-3">
                       {module.title}

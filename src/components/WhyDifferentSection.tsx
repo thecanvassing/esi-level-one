@@ -1,31 +1,31 @@
-import { Check, DollarSign, Shield, Wrench, Users, Globe } from "lucide-react";
+import { BadgeCheck, CircleOff, Hammer, UsersRound, Earth } from "lucide-react";
 import gooddollarLogo from "@/assets/gooddollar-logo.png";
 import minipayLogo from "@/assets/minipay-logo.png";
 import canvassingLogo from "@/assets/canvassing-logo.png";
 
 const features = [
   {
-    icon: DollarSign,
+    icon: CircleOff,
     title: "Completely Free",
     description: "The program costs nothing. The tokens you earn are yours to keep.",
   },
   {
-    icon: Shield,
+    icon: BadgeCheck,
     title: "Risk-Free Learning",
     description: "You never spend your own money. Every token is given to you for free.",
   },
   {
-    icon: Wrench,
+    icon: Hammer,
     title: "Practical, Not Theoretical",
     description: "Every module includes hands-on activities. You're not watching—you're doing.",
   },
   {
-    icon: Users,
+    icon: UsersRound,
     title: "Built for Beginners",
     description: "We explain everything in plain language. No prior crypto knowledge required.",
   },
   {
-    icon: Globe,
+    icon: Earth,
     title: "UN SDG Aligned",
     description: "Supports SDG 4 (Quality Education) by making blockchain knowledge accessible to everyone.",
   },
@@ -58,8 +58,8 @@ const WhyDifferentSection = () => {
             <div className="space-y-5">
               {features.slice(0, 3).map((feature, index) => (
                 <div key={index} className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary/30 transition-colors">
-                    <feature.icon className="text-primary" size={22} />
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/25 to-primary/10 flex items-center justify-center shrink-0 group-hover:from-primary/35 group-hover:to-primary/20 transition-all duration-300 shadow-sm">
+                    <feature.icon className="text-primary" size={22} strokeWidth={1.75} />
                   </div>
                   <div>
                     <h3 className="font-bold text-background text-lg">{feature.title}</h3>
@@ -85,8 +85,8 @@ const WhyDifferentSection = () => {
             <div className="space-y-5">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-4 group">
-                  <div className="w-8 h-8 rounded-full bg-gradient-hero flex items-center justify-center shrink-0 shadow-lg">
-                    <Check className="text-primary-foreground" size={16} />
+                  <div className="w-9 h-9 rounded-full bg-gradient-hero flex items-center justify-center shrink-0 shadow-lg">
+                    <feature.icon className="text-primary-foreground" size={16} strokeWidth={2} />
                   </div>
                   <span className="text-background font-medium group-hover:text-primary transition-colors">{feature.title}</span>
                 </div>
