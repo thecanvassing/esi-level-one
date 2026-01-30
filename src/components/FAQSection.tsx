@@ -7,6 +7,11 @@ import {
 
 const faqs = [
   {
+    question: "Is the ESI L1 program still open?",
+    answer: "No, ESI L1 has successfully completed its first batch of students and is now closed indefinitely. We held an opening call and a closing trivia session with our graduates. Join our WhatsApp community to stay connected and hear about any future opportunities.",
+    featured: true,
+  },
+  {
     question: "Is ESI L1 really free?",
     answer: "Yes, completely free. There are no hidden fees, no premium upgrades, and no payments required. The tokens you earn during the program are yours to keep.",
   },
@@ -68,10 +73,22 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-card rounded-xl border border-border/50 px-6 shadow-sm"
+                className={`rounded-xl border px-6 shadow-sm ${
+                  faq.featured 
+                    ? "bg-primary/5 border-primary/30 ring-2 ring-primary/20" 
+                    : "bg-card border-border/50"
+                }`}
               >
-                <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary py-5">
-                  {faq.question}
+                <AccordionTrigger className={`text-left font-semibold hover:text-primary py-5 ${
+                  faq.featured ? "text-primary" : "text-foreground"
+                }`}>
+                  {faq.featured && (
+                    <span className="inline-flex items-center gap-2">
+                      <span className="px-2 py-0.5 text-xs font-bold uppercase tracking-wider bg-primary text-primary-foreground rounded">Important</span>
+                      {faq.question}
+                    </span>
+                  )}
+                  {!faq.featured && faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-5">
                   {faq.answer}
