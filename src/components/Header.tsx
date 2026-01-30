@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import esiLogo from "@/assets/esi-logo.png";
 
@@ -50,9 +49,9 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:block">
-          <Button variant="cta" size="default" asChild>
-            <a href="#register">Start Free</a>
-          </Button>
+          <span className="px-4 py-2 rounded-full bg-muted border border-border text-muted-foreground font-medium text-sm">
+            Program Closed
+          </span>
         </div>
 
         {/* Mobile Menu Button */}
@@ -79,9 +78,9 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant="cta" size="lg" className="mt-2" asChild>
-              <a href="#register">Start Learning Free</a>
-            </Button>
+            <span className="mt-2 px-4 py-2 rounded-full bg-muted border border-border text-muted-foreground font-medium text-sm text-center">
+              Program Closed
+            </span>
           </nav>
         </div>
       )}

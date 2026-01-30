@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ShieldCheck, CircleDollarSign, Zap } from "lucide-react";
+import { ShieldCheck, CircleDollarSign, Zap } from "lucide-react";
 import gooddollarLogo from "@/assets/gooddollar-logo.png";
 import minipayLogo from "@/assets/minipay-logo.png";
 import canvassingLogo from "@/assets/canvassing-logo.png";
@@ -37,12 +37,9 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              <Button variant="cta" size="xl" asChild>
-                <a href="#register">
-                  Start Learning Free
-                  <ArrowRight size={20} />
-                </a>
-              </Button>
+              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-muted border border-border text-muted-foreground font-semibold">
+                Program Closed
+              </div>
               <Button variant="outline" size="xl" asChild>
                 <a href="#modules">View Modules</a>
               </Button>
