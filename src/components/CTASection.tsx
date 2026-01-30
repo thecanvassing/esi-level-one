@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Star } from "lucide-react";
+import { Sparkles, Star } from "lucide-react";
 
 const WhatsAppIcon = ({ size = 20 }: { size?: number }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" width={size} height={size}>
@@ -25,53 +25,29 @@ const CTASection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-foreground/15 backdrop-blur-sm text-primary-foreground font-semibold text-sm mb-8 border border-primary-foreground/20">
             <Sparkles size={16} />
-            <span>Start Your Journey Today</span>
+            <span>Program Complete</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-8 leading-tight">
-            Ready to Start Your{" "}
+            Thank You for Your{" "}
             <span className="relative">
-              Crypto Journey
+              Interest
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 8C50 2 150 2 198 8" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeOpacity="0.4"/>
               </svg>
             </span>
-            ?
           </h2>
 
           <p className="text-lg sm:text-xl opacity-90 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Join thousands of learners who are discovering blockchain technology the smart way—by 
-            earning while they learn. ESI L1 is free, beginner-friendly, and designed to give 
-            you real skills with real tokens.
+            ESI L1 has successfully completed its first batch of students. The program is currently 
+            closed, but you can still explore the curriculum and join our community to stay updated.
           </p>
 
           <p className="text-lg font-bold mb-10 px-6 py-3 rounded-full bg-primary-foreground/10 inline-block backdrop-blur-sm border border-primary-foreground/20">
-            No risk. No cost. Just knowledge and opportunity.
+            First batch complete • Program closed
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              variant="cta" 
-              size="xl" 
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-xl hover:shadow-2xl" 
-              asChild
-            >
-              <a 
-                href="https://tally.so/r/RGx79K?utm_source=website" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).ttq) {
-                    (window as any).ttq.track('ClickButton', {
-                      contents: [{ content_name: 'Start Learning for Free - CTA' }]
-                    });
-                  }
-                }}
-              >
-                Start Learning for Free
-                <ArrowRight size={20} />
-              </a>
-            </Button>
             <Button 
               variant="hero" 
               size="xl" 
@@ -79,7 +55,7 @@ const CTASection = () => {
             >
               <a href="https://chat.whatsapp.com/ErzJIN3kvxu1CnAp2qK6F0" target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon size={20} />
-                Join WhatsApp Group
+                Join WhatsApp Community
               </a>
             </Button>
           </div>
