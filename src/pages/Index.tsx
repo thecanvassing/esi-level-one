@@ -26,6 +26,8 @@ const Index = () => {
         <meta property="og:title" content="ESI L1 – Learn Crypto. Earn Crypto. Risk Nothing." />
         <meta property="og:description" content="A free program teaching cryptocurrency through real earnings. No investment required." />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://esi-l1.thecanvassing.xyz/" />
+        <meta property="og:url" content="https://esi-l1.thecanvassing.xyz/" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />

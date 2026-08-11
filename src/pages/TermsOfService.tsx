@@ -8,6 +8,7 @@ const TermsOfService = () => {
       <Helmet>
         <title>Terms of Service | ESI L1 - Education for Social Impact</title>
         <meta name="description" content="Terms of Service for ESI L1 cryptocurrency education program by Canvassing." />
+        <link rel="canonical" href="https://esi-l1.thecanvassing.xyz/terms-of-service" />
       </Helmet>
 
       <Header />

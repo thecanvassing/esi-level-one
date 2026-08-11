@@ -8,6 +8,7 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Privacy Policy | ESI L1 - Education for Social Impact</title>
         <meta name="description" content="Privacy Policy for ESI L1 cryptocurrency education program by Canvassing." />
+        <link rel="canonical" href="https://esi-l1.thecanvassing.xyz/privacy-policy" />
       </Helmet>
 
       <Header />
