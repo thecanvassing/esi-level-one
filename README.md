@@ -200,9 +200,9 @@ The landing page is fully responsive across all device sizes:
 
 ---
 
-## 🤝 About Canvassing
+## 🤝 About CNV Labs KO XYZ
 
-ESI L1 is developed by **Canvassing**, an organization focused on blockchain education and financial inclusion. The program is inspired by the belief that everyone deserves access to financial education and the emerging digital economy.
+ESI L1 is developed by **CNV Labs KO XYZ** (formerly Canvassing), an organization focused on blockchain education and financial inclusion. The program is inspired by the belief that everyone deserves access to financial education and the emerging digital economy.
 
 **Contact**: admin@thecanvassing.xyz
 
@@ -210,7 +210,7 @@ ESI L1 is developed by **Canvassing**, an organization focused on blockchain edu
 
 ## 📜 License
 
-This project is proprietary to Canvassing. All rights reserved.
+This project is proprietary to CNV Labs KO XYZ. All rights reserved.
 
 ---
 

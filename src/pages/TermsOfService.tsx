@@ -7,7 +7,7 @@ const TermsOfService = () => {
     <>
       <Helmet>
         <title>Terms of Service | ESI L1 - Education for Social Impact</title>
-        <meta name="description" content="Terms of Service for ESI L1 cryptocurrency education program by Canvassing." />
+        <meta name="description" content="Terms of Service for ESI L1 cryptocurrency education program by CNV Labs KO XYZ Limited." />
         <link rel="canonical" href="https://esi-l1.thecanvassing.xyz/terms-of-service" />
       </Helmet>
 
@@ -25,7 +25,7 @@ const TermsOfService = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">1. Acceptance of Terms</h2>
               <p>
-                By accessing and using ESI L1 (Education for Social Impact Level 1) operated by Canvassing, 
+                By accessing and using ESI L1 (Education for Social Impact Level 1) operated by CNV Labs KO XYZ Limited, 
                 you agree to be bound by these Terms of Service. If you do not agree to these terms, 
                 please do not use our services.
               </p>
@@ -67,7 +67,7 @@ const TermsOfService = () => {
               <h2 className="text-2xl font-semibold text-foreground">5. Tokens and Rewards</h2>
               <p>
                 The tokens earned through ESI L1 are provided by third-party services including GoodDollar. 
-                Canvassing does not guarantee the value of any tokens earned. Token values may fluctuate, 
+                CNV Labs KO XYZ Limited does not guarantee the value of any tokens earned. Token values may fluctuate, 
                 and we are not responsible for any losses related to token value changes.
               </p>
             </section>
@@ -77,7 +77,7 @@ const TermsOfService = () => {
               <p>
                 ESI L1 integrates with third-party services such as GoodDollar and MiniPay. 
                 Your use of these services is subject to their respective terms and conditions. 
-                Canvassing is not responsible for the actions or policies of third-party providers.
+                CNV Labs KO XYZ Limited is not responsible for the actions or policies of third-party providers.
               </p>
             </section>
 
@@ -85,7 +85,7 @@ const TermsOfService = () => {
               <h2 className="text-2xl font-semibold text-foreground">7. Intellectual Property</h2>
               <p>
                 All content, materials, and resources provided through ESI L1 are the property of 
-                Canvassing or its licensors. You may not reproduce, distribute, or create derivative 
+                CNV Labs KO XYZ Limited or its licensors. You may not reproduce, distribute, or create derivative 
                 works without our express written permission.
               </p>
             </section>
@@ -102,7 +102,7 @@ const TermsOfService = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">9. Limitation of Liability</h2>
               <p>
-                To the maximum extent permitted by law, Canvassing shall not be liable for any 
+                To the maximum extent permitted by law, CNV Labs KO XYZ Limited shall not be liable for any 
                 indirect, incidental, special, or consequential damages arising from your use of 
                 ESI L1 or any related services.
               </p>
