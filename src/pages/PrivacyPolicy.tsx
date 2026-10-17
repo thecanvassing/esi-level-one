@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
     <>
       <Helmet>
         <title>Privacy Policy | ESI L1 - Education for Social Impact</title>
-        <meta name="description" content="Privacy Policy for ESI L1 cryptocurrency education program by Canvassing." />
+        <meta name="description" content="Privacy Policy for ESI L1 cryptocurrency education program by CNV Labs KO XYZ Limited." />
         <link rel="canonical" href="https://esi-l1.thecanvassing.xyz/privacy-policy" />
       </Helmet>
 
@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">1. Introduction</h2>
               <p>
-                Welcome to ESI L1 (Education for Social Impact Level 1), operated by Canvassing. 
+                Welcome to ESI L1 (Education for Social Impact Level 1), operated by CNV Labs KO XYZ Limited. 
                 We are committed to protecting your privacy and ensuring the security of your personal information. 
                 This Privacy Policy explains how we collect, use, and safeguard your data when you use our services.
               </p>

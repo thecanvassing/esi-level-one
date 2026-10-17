@@ -29,7 +29,10 @@ const Footer = () => {
             </div>
             <p className="text-background/70 leading-relaxed max-w-md mb-4">
               Education for Social Impact Level 1 – A free cryptocurrency education program 
-              by Canvassing. Learn crypto, earn crypto, risk nothing.
+              by{" "}
+              <a href="https://github.com/thecanvassing" className="underline hover:text-background" target="_blank" rel="noreferrer">
+                CNV Labs KO XYZ
+              </a>. Learn crypto, earn crypto, risk nothing.
             </p>
             <div className="flex items-center gap-4">
               {socialLinks.map((social) => (
@@ -68,7 +71,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#about" className="text-background/70 hover:text-background transition-colors">
-                  About Canvassing
+                  About
                 </a>
               </li>
             </ul>
@@ -99,7 +102,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-background/10">
           <p className="text-background/50 text-sm text-center sm:text-left">
-            © {currentYear} Canvassing. All rights reserved.
+            © {currentYear} CNV Labs KO XYZ. All rights reserved.
           </p>
         </div>
       </div>

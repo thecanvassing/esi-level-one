@@ -15,12 +15,11 @@ const AboutSection = () => {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Built by <span className="text-gradient-hero">Canvassing</span>
+              Built by <span className="text-gradient-hero">CNV Labs KO XYZ</span>
             </h2>
 
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Canvassing is a blockchain-based project founded in 2024 by Andrew Kim and 
-              Benedictors Ogada. Our mission is to make cryptocurrency education accessible, 
+              CNV Labs KO XYZ, formerly Canvassing, makes cryptocurrency education accessible, 
               practical, and beneficial for everyday people.
             </p>
 
@@ -55,9 +54,9 @@ const AboutSection = () => {
                 benefit most from blockchain technology."
               </blockquote>
               <div className="flex items-center gap-4 pt-6 border-t border-primary-foreground/20">
-                <img src={canvassingLogo} alt="Canvassing" className="w-12 h-12 rounded-xl" />
+                <img src={canvassingLogo} alt="CNV Labs KO XYZ" className="w-12 h-12 rounded-xl" />
                 <div>
-                  <p className="font-semibold">Canvassing</p>
+                  <p className="font-semibold">CNV Labs KO XYZ</p>
                   <p className="text-sm opacity-80">Established 2024</p>
                 </div>
               </div>
