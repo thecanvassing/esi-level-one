@@ -30,7 +30,7 @@ const Footer = () => {
             <p className="text-background/70 leading-relaxed max-w-md mb-4">
               Education for Social Impact Level 1 – A free cryptocurrency education program 
               by{" "}
-              <a href="https://github.com/thecanvassing" className="underline hover:text-background" target="_blank" rel="noreferrer">
+              <a href="https://thecanvassing.xyz" className="underline hover:text-background" target="_blank" rel="noreferrer">
                 CNV Labs KO XYZ
               </a>. Learn crypto, earn crypto, risk nothing.
             </p>
